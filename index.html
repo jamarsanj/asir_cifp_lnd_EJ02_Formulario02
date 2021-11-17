@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Curriculum Vitae </title>
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+    <h1>Curriculum Vitae</h1>
+    </header>
+<form action="mailto:cv@gmail.com" method="post" enctype="text/plain">
+<div>
+    <fieldset id="datospersonales" tabindex="1">
+        <legend><h2>Datos Personales</h2></legend>
+        <label>DNI</label>
+        <input type="text" name="dni" placeholder="XX.XXX.XXXY" pattern="[0-9]{8}[A-Za-z]{1}" maxlength="9"/> <br>
+        <label>Nombre</label>
+        <input type="text" id="nombre" name="nombre" maxlength="20" pattern="[A-Za-z]" autocomplete="on"> <br>
+        <label>Apellido 1</label>
+        <input type="text" id="apellido1" name="apellido1" maxlength="30" pattern="[A-Za-z]" autocomplete="on"> <br>
+        <label>Apellido 2</label>
+        <input type="text" id="apellido2" name="apellido2" maxlength="30" pattern="[A-Za-z]" autocomplete="on"> <br>
+        <label>Dirección</label>
+        <input type="text" id="dirección" name="dirección" maxlength="50"> <br>
+        <label>Código Postal</label>
+        <input type="text" id="cpostal" name="cpostal" placeholder="11111" maxlength="6" pattern="[0-9]"> <br>
+        <label>Población</label>
+        <input type="text" id="poblacion" name="poblacion" maxlength="50"> <br>
+        <label>Provincia</label>
+            <select name="lprovincia">
+                <option value="1">Asturias</option>
+                <option value="2">Cantabria</option>
+                <option value="3">Galicia</option>
+                <option value="4">Madrid</option>
+                <option value="5">País Vasco</option>
+            </select> <br><br>
+        <label>Fecha Nacimiento</label>
+        <input type="date" name="fechanac" step="1" min="1900-01-01" max="2018-12-31" value="date"> <br>
+        <label>Sexo</label>
+        <input type="radio" id="masculino" name="Sexo" value="Masculino" required>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="Sexo" value="Femenino" required>
+        <label for="femenino">Femenino</label><br>
+        <label>Teléfono</label>
+        <input type="tel" name="telefono" placeholder="+XX.XXX.XXX.XXX" maxlength="13" pattern="[0-9]{9}" required><br>
+        <label>Email:</label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+</div>
+<div>
+    <fieldset id="formacion" tabindex="3">
+        <legend><h2>Formación y Experiencia</h2></legend>
+            <label>Estudios Cursados</label>
+            <input type="text" id="estudios" name="estudios"><br>
+            <label>Título</label>
+            <select>
+                    <option selected value="1">
+                    <option value="1">Ciclo Grado Medio</option> 
+                    <option value="2">Ciclo Grado Superior</option> 
+                    <option value="3">Universitarios</option>
+                    </option>
+            </select><br>
+            <label>Experiencia Laboral</label>
+            <input type="radio" name="boton" value="1" required>Sí
+            <input type="radio" name="boton" value="2" required>No<br>
+            <label>Idiomas</label>
+            <select multiple size="4">
+                <optgroup> 
+                    <option value="0">Español</option> 
+                    <option value="1">Inglés</option> 
+                    <option value="2">Francés</option>
+                    <option value="3">Alemán</option>  
+                </optgroup> 
+            </select><br>
+            <label>Currículum</label>
+            <input type="file" name="CV" accept=".pdf">
+            <!-- VALIDACIÓN TIPO ARCHIVO EN SERVIDOR NECESARIA -->
+    </fieldset>
+</div>
+<div>
+    <fieldset id="acceso" tabindex="2">
+        <legend><h2>Acceso al Portal</h2></legend>
+            <label>Usuario</label>
+            <input type="text" id="usuario" name="usuario" maxlength="10" pattern="[A-Za-z0-9]+" required> <br>
+            <label>Contraseña</label>
+            <input type="password" id="pw" name="pw" maxlength="10" required> <br>
+    </fieldset>
+</div>
+<div>
+    <fieldset id="otros" tabindex="4">
+        <legend><h2>Otros</h2></legend>
+            <nav>
+            <textarea name="AA" rows="9" cols="60" placeholder="Indica aquí cualquier otra información."></textarea>    
+            
+            </nav>
+    </fieldset>
+</div>
+<br>
+<footer>
+<input type="submit" value="Enviar Datos"/>
+<input type="reset" value="Limpiar Datos"/>
+</footer>
+</form>
+</body>
+</html>

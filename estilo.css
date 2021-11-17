@@ -1,0 +1,56 @@
+header {
+    text-align: center;
+    background-color: aliceblue;
+}
+body {
+    background-color: aliceblue;
+}
+div {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+form {
+    width: auto;
+    height: auto;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+}
+
+form input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;
+}
+/* PARA ORGANIZAR LISTA ALFABETICA
+lprovincia {
+   
+}
+*/
+textarea {
+    text-align: left;
+    align-self: center;
+}
+
+.formacion {
+    width: 100%;
+    height: auto;
+}
+
+.acceso {
+    width: 100%;
+    height: auto;
+}
+
+.otros {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
